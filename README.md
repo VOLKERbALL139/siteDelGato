@@ -1,2 +1,2 @@
-# siteDelGato
- La web de mis gatos
+# blogDelGato
+ Un blog para difundir información para el cuidado de los gatos
