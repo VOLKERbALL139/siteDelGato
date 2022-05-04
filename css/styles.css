@@ -1,6 +1,6 @@
 :root{
     --headingFont: 'Bangers', sans-serif;
-    --paragraphFont: 'Padauk', sans-serif;
+    --paragraphFont: 'Open Sans', sans-serif;
 
     --blueColor: rgb(36, 141, 218);
     --orangeColor: rgb(241, 144, 20);
@@ -171,14 +171,14 @@ img{
     border: none;
     margin: 0;
 }
-.widget-course__label{
+.widget-course__label, .course__label{
     font-family: var(--paragraphFont);
     font-weight: 700;
 }
-.widget-course__info{
+.widget-course__info, .course__info{
     font-weight: normal;
 }
-.widget-course__label, .widget-course__inf{
+.widget-course__label, .widget-course__inf, .course__label, .course__info{
     font-size: 1.8rem;
 }
 
@@ -186,4 +186,35 @@ img{
 .footer{
     background-color: var(--blackColor);;
     margin-top: 4rem;
+}
+
+/** Catcare **/
+@media (min-width: 768px){
+    .catcare{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .catcare__img{
+        
+    }
+}
+
+.catcare{
+    font-family: var(--paragraphFont);
+    font-size: 1.8rem;
+}
+.course{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--orangeColor);
+}
+@media (min-width: 768px){
+    .course{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.course:last-of-type{
+    border: none;
 }
