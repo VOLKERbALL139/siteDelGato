@@ -67,7 +67,10 @@ img{
 .p-justyfy{
     text-align: justify;
 }
-
+.center-img{
+    display: block;
+    margin: auto;
+}
 /** Header **/
 .header{
     background-image: url(../img/catinbox.jpg);
